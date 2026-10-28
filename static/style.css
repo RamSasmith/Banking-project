@@ -1,0 +1,17 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f4f4f4;color:#111;display:flex}
+aside{width:220px;min-height:100vh;background:#111;color:white;padding:28px 18px;position:fixed}
+aside h2{margin:0 0 35px}
+aside a{display:block;color:white;text-decoration:none;padding:14px 10px;margin:8px 0;border:1px solid #555}
+aside a:hover{background:white;color:black}
+main{margin-left:220px;padding:30px;width:calc(100% - 220px)}
+header{margin-bottom:25px}
+section{background:white;padding:22px;margin-bottom:22px;border:1px solid #ddd}
+form{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+input,select,textarea{padding:12px;border:1px solid #aaa;width:100%;font:inherit}
+textarea{grid-column:span 3;min-height:65px}
+button{padding:12px 20px;background:#111;color:white;border:0;cursor:pointer}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:12px;border-bottom:1px solid #ddd}
+.tablewrap{overflow-x:auto}
+@media(max-width:700px){aside{width:145px;padding:15px 8px}main{margin-left:145px;width:calc(100% - 145px);padding:12px}form{grid-template-columns:1fr}textarea{grid-column:auto}}

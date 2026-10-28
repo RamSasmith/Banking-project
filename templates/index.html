@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Management</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<aside>
+  <h2>MY BANK</h2>
+  <a href="#create">Create Account</a>
+  <a href="#balance">Account Balance</a>
+  <a href="#transactions">Transactions</a>
+  <a href="#savings">Savings Accounts</a>
+</aside>
+<main>
+  <header><h1>Bank Management</h1><p>Customer account services</p></header>
+  <section id="create">
+    <h2>Create Bank Account</h2>
+    <form id="createForm">
+      <input name="name" placeholder="Full name" required>
+      <input name="dob" type="date" required>
+      <select name="gender" required><option value="">Gender</option><option>Male</option><option>Female</option><option>Other</option></select>
+      <input name="aadhar" placeholder="Aadhaar number" pattern="[0-9]{12}" maxlength="12" required>
+      <input name="pan" placeholder="PAN number" maxlength="10" required>
+      <input name="email" type="email" placeholder="Email address" required>
+      <input name="phone" placeholder="Phone number" pattern="[0-9]{10}" maxlength="10" required>
+      <textarea name="address" placeholder="Full address" required></textarea>
+      <select name="account_type" required><option value="">Account type</option><option>Savings</option><option>Current</option></select>
+      <button>Create Account</button>
+    </form>
+    <p id="createMessage"></p>
+  </section>
+  <section id="balance">
+    <h2>Account Balance & Transactions</h2>
+    <form id="actionForm">
+      <input name="number" placeholder="Account number" required>
+      <input name="amount" type="number" min="1" step="0.01" placeholder="Amount" required>
+      <select name="action"><option>Deposit</option><option>Withdraw</option></select>
+      <button>Submit</button>
+    </form>
+    <h3>Total bank balance: ₹<span id="total">0</span></h3>
+  </section>
+  <section id="savings">
+    <h2>All Accounts</h2>
+    <div class="tablewrap"><table><thead><tr><th>Account</th><th>Customer</th><th>Type</th><th>Phone</th><th>Balance</th></tr></thead><tbody id="accounts"></tbody></table></div>
+  </section>
+  <section id="transactions">
+    <h2>All Transactions</h2>
+    <div class="tablewrap"><table><thead><tr><th>Account</th><th>Type</th><th>Amount</th></tr></thead><tbody id="transactionsList"></tbody></table></div>
+  </section>
+</main>
+<script src="/static/script.js"></script>
+</body>
+</html>

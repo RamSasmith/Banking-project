@@ -1,0 +1,40 @@
+{
+  "customers": [
+    {
+      "name": "Bestha Ram sasmith",
+      "dob": "2004-02-03",
+      "gender": "Male",
+      "aadhar": "990811236674",
+      "pan": "RTALA1208I",
+      "email": "ram@gmail.com",
+      "phone": "9014033384",
+      "address": "49/1a/130b, JNR nagar, Gayathri estate, Kurnool\n49/1a/130b, JNR nagar, Gayathri estate, Kurnool",
+      "account_type": "Savings"
+    }
+  ],
+  "accounts": [
+    {
+      "number": "AC1001",
+      "customer": {
+        "name": "Bestha Ram sasmith",
+        "dob": "2004-02-03",
+        "gender": "Male",
+        "aadhar": "990811236674",
+        "pan": "RTALA1208I",
+        "email": "ram@gmail.com",
+        "phone": "9014033384",
+        "address": "49/1a/130b, JNR nagar, Gayathri estate, Kurnool\n49/1a/130b, JNR nagar, Gayathri estate, Kurnool",
+        "account_type": "Savings"
+      },
+      "type": "Savings",
+      "balance": 200000.0
+    }
+  ],
+  "transactions": [
+    {
+      "account": "AC1001",
+      "action": "Deposit",
+      "amount": 200000.0
+    }
+  ]
+}
